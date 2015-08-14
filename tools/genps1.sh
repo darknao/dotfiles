@@ -5,7 +5,7 @@ save () {
     escaped=$(printf "%q" "PS1='$PS1'")
     sed -i "s|^PS1=.*$|$escaped|" ~/.bashrc
   else
-  echo "PS1=$PS1" >> ~/.bashrc
+  echo "PS1='$PS1'" >> ~/.bashrc
   echo "export PS1" >> ~/.bashrc
 
 fi
