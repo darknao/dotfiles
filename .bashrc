@@ -4,7 +4,7 @@ export SEND_256_COLORS_TO_REMOTE=1
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+    . /etc/bashrc
 fi
 
 # 256 colors 
@@ -21,3 +21,5 @@ PS1='\[\033[38;5;197m\]\u\[\033[38;5;31m\]@\[\033[38;5;99m\]\h\[\033[00m\]:\[\03
 alias vi=vim
 alias ll='ls -alh'
 
+# Python startup script
+export PYTHONSTARTUP=~/.pythonrc
