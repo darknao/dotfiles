@@ -21,5 +21,8 @@ PS1='\[\033[38;5;197m\]\u\[\033[38;5;31m\]@\[\033[38;5;99m\]\h\[\033[00m\]:\[\03
 alias vi=vim
 alias ll='ls -alh'
 
+# Git pretty log
+alias gitlog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)%an%Creset' --abbrev-commit --date=relative"
+
 # Python startup script
 export PYTHONSTARTUP=~/.pythonrc
